@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="general_bg_color">#263238</color>
+    <color name="general_bg_color">@color/black_russian</color>
     <color name="general_text_color">#E0E0E0</color>
+    <color name="general_edit_text_bg_color">@color/fedora</color>
+    <color name="general_bottom_nav_view_icon_tint_color">@color/white</color>
 </resources>

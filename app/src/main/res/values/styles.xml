@@ -9,13 +9,19 @@
 
     <style name="MediumTextAppearance">
         <item name="android:fontFamily">@font/comfortaa</item>
-        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/general_text_color</item>
+    </style>
+
+    <style name="MediumTextAppearance.Bold">
+        <item name="android:fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
         <item name="android:textColor">@color/general_text_color</item>
     </style>
 
     <style name="BigTextAppearance">
         <item name="android:fontFamily">@font/comfortaa</item>
-        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
         <item name="android:textColor">@color/general_text_color</item>
     </style>
 

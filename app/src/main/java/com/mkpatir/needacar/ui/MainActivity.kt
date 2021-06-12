@@ -1,12 +1,23 @@
 package com.mkpatir.needacar.ui
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import android.content.Context
+import android.content.Intent
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.mkpatir.needacar.R
+import com.mkpatir.needacar.databinding.ActivityMainBinding
+import com.mkpatir.needacar.ui.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity<ActivityMainBinding>() {
+
+    companion object {
+        fun newIntent(context: Context) = Intent(context,MainActivity::class.java)
+    }
+
+    override fun setLayout(): Int = R.layout.activity_main
+
+    override fun setupUI() {
+        getDataBinding().bottomNavView.setupWithNavController((supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment).navController)
     }
 }

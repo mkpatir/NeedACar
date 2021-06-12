@@ -7,7 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="international_klein_blue">#031A9B</color>
+    <color name="free_speech_blue">#3455B6</color>
+    <color name="iron">#D4D4D7</color>
+    <color name="spun_pearl">#A8A8AA</color>
+    <color name="black_russian">#111114</color>
+    <color name="fedora">#565157</color>
+    <color name="zest">#BD7A37</color>
+    <color name="alizarin">#D72E27</color>
+    <color name="white_smoke">#EFEFEF</color>
 
-    <color name="general_bg_color">#E0E0E0</color>
+    <!-- General Colors -->
+    <color name="general_bg_color">@color/iron</color>
     <color name="general_text_color">#263238</color>
+    <color name="general_edit_text_bg_color">@color/white_smoke</color>
+    <color name="general_bottom_nav_view_icon_tint_color">@color/international_klein_blue</color>
 </resources>

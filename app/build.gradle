@@ -1,8 +1,9 @@
 plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-    id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
+    id("com.android.application")
+    id("kotlin-android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -49,6 +50,8 @@ dependencies {
     implementation androidDependencies.material
     implementation androidDependencies.constraintLayout
     implementation androidDependencies.recyclerView
+    implementation androidDependencies.navigationFragment
+    implementation androidDependencies.navigationUi
 
     implementation androidDependencies.hilt
     kapt androidDependencies.hiltCompiler
