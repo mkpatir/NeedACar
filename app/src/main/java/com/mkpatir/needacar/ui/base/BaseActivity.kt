@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 
-abstract class BaseActivity<D: ViewDataBinding>: AppCompatActivity() {
+abstract class BaseActivity<D: ViewDataBinding,VM: BaseViewModel>: AppCompatActivity() {
 
     private lateinit var dataBinding: D
+    private lateinit var viewModel: VM
 
     abstract fun setLayout(): Int
+
+    abstract fun setViewModel(): Lazy<VM>
 
     abstract fun setupUI()
 
@@ -20,4 +23,6 @@ abstract class BaseActivity<D: ViewDataBinding>: AppCompatActivity() {
     }
 
     fun getDataBinding() = dataBinding
+
+    fun getViewModel() = setViewModel().value
 }

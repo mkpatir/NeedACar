@@ -8,11 +8,14 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 
-abstract class BaseFragment<D: ViewDataBinding>: Fragment() {
+abstract class BaseFragment<D: ViewDataBinding, VM: BaseViewModel>: Fragment() {
 
     private lateinit var dataBinding: D
+    private lateinit var viewModel: VM
 
     abstract fun setLayout(): Int
+
+    abstract fun setViewModel(): Lazy<VM>
 
     abstract fun setupUI()
 
@@ -31,4 +34,6 @@ abstract class BaseFragment<D: ViewDataBinding>: Fragment() {
     }
 
     fun getDataBinding() = dataBinding
+
+    fun getViewModel() = setViewModel().value
 }
