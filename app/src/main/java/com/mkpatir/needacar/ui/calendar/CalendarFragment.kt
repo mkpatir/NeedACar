@@ -5,7 +5,9 @@ import com.mkpatir.needacar.R
 import com.mkpatir.needacar.databinding.FragmentCalendarBinding
 import com.mkpatir.needacar.ui.base.BaseFragment
 import com.mkpatir.needacar.ui.base.EmptyViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CalendarFragment: BaseFragment<FragmentCalendarBinding,EmptyViewModel>() {
 
     override fun setLayout(): Int = R.layout.fragment_calendar
