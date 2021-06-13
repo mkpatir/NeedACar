@@ -2,7 +2,6 @@ package com.mkpatir.needacar.ui
 
 import android.content.Context
 import android.content.Intent
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.mkpatir.needacar.R
