@@ -18,3 +18,9 @@ Rent a car application
 |Navigation         |2.4.0-alpha02
 |Lottie             |3.4.1
 |İntuit ( sdp, ssp) |1.0.6
+
+## Features
+
+- UI will be arranged
+- Service connections will be added
+- Night mode support will be added
